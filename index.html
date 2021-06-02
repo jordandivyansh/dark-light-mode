@@ -3,12 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
+    <title>Light-Dark Mode</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Dark mode switch -->
+    <div class="theme-switch-wrapper">
+        <span id="toggle-icon">
+            <span class="togggle-text">Light Mode</span>
+            <i class="fas fa-sun"></i>
+        </span>
+        <label class="theme-switch">
+            <input type="checkbox">
+            <div class="slider round"></div>
+        </label>
+    </div>
+
+    
+    <!-- Navigation -->
+    <nav id="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#buttons">Buttons</a>
+        <a href="#contact">Contact US</a>
+    </nav>
+    <!-- Home -->
+    <section id="home">
+        <div class="title-group">
+            <h1>Custom Title</h1>
+            <h2>Hello</h2>
+        </div>
+    </section>
+    <section id="about">
+        <h1>About us</h1>
+        <div class="about-container">
+            <div class="image-container">
+                <h2>C++ is great</h2>
+                <img src="img/undraw_proud_coder_light.svg" alt="Proud coder" id="image1">  
+            </div>
+            <div class="image-container">
+                <h2>Python is for kids</h2>
+                <img src="img/undraw_feeling_proud_light.svg" alt="Proud Coder" id="image2">
+            </div> 
+            <div class="image-container">
+                <img src="img/undraw_conceptual_idea_light.svg" alt="Idea" id="image3">
+            </div>
+        </div>
+    </section>
+    <section id="buttons">
+        <h1>Buttons</h1>
+        <div class="buttons">
+            <button class="primary">Primary</button>
+            <button class="secondary">Secondary</button>
+            <button class="primary" disabled>Disabled</button>
+            <button class="outline">Outline</button>
+            <button class="secondary outline">All outline</button>
+            <button class="outline" disabled>Disabled</button>
+        </div>
+        <div class="text-box" id="text-box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt a, quae officiis temporibus minus totam aut commodi voluptate, dolore assumenda illum sit necessitatibus voluptatum neque consequatur alias cupiditate eos aperiam.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="social-icons">
+            <i class="fab fa-github"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+        </div>
+
+    </section>
+
+
     <!-- Script -->
     <script src="script.js"></script>
 </body>
